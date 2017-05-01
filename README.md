@@ -1,7 +1,7 @@
 # Starup page
 Sample startup page
 
-[Demo](lasota-piotr.github.io/startup-page)
+[Demo](https://lasota-piotr.github.io/startup-page)
 
 
 ## Used:
