@@ -1,0 +1,46 @@
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+
+.o-wrapper {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left:  auto;
+    padding-right: $unit;
+    padding-left:  $unit;
+}
+
+
+// Different sizes
+
+.o-wrapper--flush {
+  padding-right: 0;
+  padding-left:  0;
+}
+
+.o-wrapper--tiny {
+  padding-right: $unit-tiny;
+  padding-left:  $unit-tiny;
+}
+
+.o-wrapper--small {
+  padding-right: $unit-small;
+  padding-left:  $unit-small;
+}
+
+.o-wrapper--large {
+  padding-right: $unit-large;
+  padding-left:  $unit-large;
+}
+
+.o-wrapper--huge {
+  padding-right: $unit-huge;
+  padding-left:  $unit-huge;
+}
+
+
+// Different widths
+
+.o-wrapper--narrow {
+  max-width: 900px;
+}

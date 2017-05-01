@@ -1,0 +1,32 @@
+/* ==========================================================================
+   #HERO
+   ========================================================================== */
+
+.c-hero {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+  .c-hero__wrapper {
+    position: relative;
+    padding-bottom: 90%;
+  }
+
+  .c-hero__btn {
+   position: absolute;
+   right: $unit;
+   bottom: $unit;
+   font-weight: $font-weight-bold
+  }
+
+.c-hero\@tablet {
+
+  .c-hero__wrapper {
+    @include mq($from: tablet) {
+      padding-bottom: 500px;
+    }
+  }
+        
+}

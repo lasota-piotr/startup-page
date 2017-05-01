@@ -1,0 +1,42 @@
+/* ==========================================================================
+   #ICONS
+   ========================================================================== */
+
+
+/**
+ * Styling for SVG icons.
+ * 1. Visual alignment for icons alongside text. Better than vertical-align: 
+ *    middle.
+ * 2. Allows sizing the icon by changing its font-size.
+ */
+
+.c-icon {
+  display: inline-block;
+  vertical-align: -0.15em; /* [1] */
+  width: 1em; /* [2] */
+  height: 1em; /* [2] */
+}
+
+
+/* Size variants
+   ========================================================================== */
+
+.c-icon--regular {
+  width: $unit;
+  height: $unit;
+}
+
+.c-icon--large {
+  width: $unit-large;
+  height: $unit-large;
+}
+
+.c-icon--xlarge {
+  width: $unit-xlarge;
+  height: $unit-xlarge;
+}
+
+.c-icon--huge {
+  width: $unit-huge;
+  height: $unit-huge;
+}

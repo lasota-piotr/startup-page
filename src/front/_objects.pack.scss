@@ -1,0 +1,75 @@
+/* ==========================================================================
+   #PACK
+   ========================================================================== */
+
+/**
+ * The pack object simply causes any number of elements pack up horizontally to
+ * automatically fill an equal, fluid width of their parent.
+ */
+
+.o-pack {
+  display: flex; 
+  width: 100%;
+}
+
+  .o-pack__item {
+    padding-left: $unit / 2;
+    padding-right: $unit / 2;
+
+    /* Spacing variants.
+       ====================================================================== */
+
+     .o-pack--tiny > & {
+      padding-left: $unit-tiny / 2;
+      padding-right: $unit-tiny / 2;
+    }
+
+    .o-pack--small > & {
+      padding-left: $unit-small / 2;
+      padding-right: $unit-small / 2;
+    }
+
+    .o-pack--large > & {
+      padding-left: $unit-large / 2;
+      padding-right: $unit-large / 2;
+    }
+
+    .o-pack--huge > & {
+      padding-left: $unit-huge / 2;
+      padding-right: $unit-huge / 2;
+    }
+
+    .o-pack--flush > & {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+
+  }
+
+.o-pack--wrap {
+  flex-wrap: wrap;
+}
+
+/* Horizontal alignment variants.
+   ====================================================================== */
+
+.o-pack--space-around {
+  justify-content: space-around;
+}
+
+.o-pack--space-between {
+  justify-content: space-between;
+}
+
+
+/* Vertical alignment variants.
+   ====================================================================== */
+
+.o-pack--middle {
+  align-items: center;
+}
+
+.o-pack--bottom {
+  align-items: flex-end;
+}

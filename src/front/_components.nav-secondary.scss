@@ -1,0 +1,40 @@
+/* ==========================================================================
+   #NAV SECONDARY
+   ========================================================================== */
+
+/**
+ * 1. Reset some styles.
+ * 2. To center horizontally text which occupies only 1 line.
+ * 3. To center horizontally text which occupies 2 or more lines.
+ */
+
+.c-nav-secondary {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0; /* [1] */
+  border-bottom: 1px solid $color-gray--very-light;
+}
+
+  .c-nav-secondary__item {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .c-nav-secondary__link {
+    display: flex;
+    justify-content: center; /* [2] */
+    align-items: center; 
+    padding-left: $unit-small;
+    padding-right: $unit-small;
+    height: $unit-huge;
+    @include inuit-font-size(20px);
+    color: $color-gray--dark;
+    text-align: center; /* [3] */
+    
+    &.is-current {
+      color: $color-brand;
+      border-bottom: 3px solid $color-brand;
+    }
+
+  }

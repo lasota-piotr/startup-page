@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #RATING
+   ========================================================================== */
+
+.c-rating {
+
+}
+
+  .c-rating__icon {
+    @include inuit-font-size(18px);
+  }
+
+  .c-rating__number {
+    margin-left: $unit-tiny;
+    @include inuit-font-size(18px);
+    font-weight: $font-weight-bold;
+  }

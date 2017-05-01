@@ -1,0 +1,62 @@
+/* ==========================================================================
+   #HAMBURGER
+   ========================================================================== */
+
+/**
+ * Animated hamburger icon for toggle button.
+ *
+ * 1. Draws horizontal line.
+ */
+@mixin hamburger-line() {
+  border-top: 0.125em solid currentColor; /* [1] */
+}
+
+@mixin hamburger-line-after-before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+@mixin hamburger-transition {
+  transition: transform 0.5s ease-out;
+}
+
+
+/**
+ * 1. Allows sizing the icon by changing its font-size.
+ * 2. Vertical center.
+ */
+
+.c-hamburger {
+  @include inuit-font-size(27px);
+  width: 1em; /* [1] */
+  height: 0.875em; /* [1] */
+  border: none;
+  position: relative;
+  @include hamburger-line;
+  @include hamburger-transition;
+
+  .is-open & {
+    transform: rotate(45deg);
+    border: none;
+  }
+
+  &::before {
+    @include hamburger-line;
+    @include hamburger-line-after-before;
+    top: 50%; /* [2] */
+    transform: translateY(-100%); /* [2] */
+  }
+
+  &::after {
+    @include hamburger-line;
+    @include hamburger-line-after-before;
+    bottom: 0;
+    @include hamburger-transition;
+
+    .is-open & {
+      transform: rotate(-90deg) translateX(0.45em);
+    }
+  }
+}

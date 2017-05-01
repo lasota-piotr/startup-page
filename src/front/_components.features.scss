@@ -1,0 +1,49 @@
+/* ==========================================================================
+   #FEATURES
+   ========================================================================== */
+
+
+/**
+ * Styling for features
+ */
+
+$c-features-max-number-elem-in-row: 4;
+
+$c-features-elements-greater-than-max-number: 
+  nth-child(n + #{$c-features-max-number-elem-in-row + 1});
+
+.c-feature {
+  flex-basis: 
+    (mq-get-breakpoint-width(mobile) - $unit) / $c-features-max-number-elem-in-row;
+  margin-bottom: $unit-small;
+}
+
+
+.c-feature\@mobile {
+  @include mq($until: tablet) {
+    &:#{$c-features-elements-greater-than-max-number} {
+    flex-basis: 100%;
+    text-align: left;
+    padding-left: 20%;
+    }
+  }
+}
+
+  .c-feature__img\@mobile {
+    @include mq($until: tablet) {
+      .c-feature:#{$c-features-elements-greater-than-max-number} > & {
+        display: inline-block;
+        width: 1.5 * $unit;
+      }
+    }
+  }
+  
+  .c-feature__body\@mobile {
+    @include mq($until: tablet) {
+      .c-feature:#{$c-features-elements-greater-than-max-number} > & {
+        display: inline-block;
+        margin-left: $unit-tiny;
+      }
+    }
+  }
+
