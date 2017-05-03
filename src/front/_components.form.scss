@@ -4,86 +4,13 @@
 
 
 /**
- * Form with floating labels
+ * Form
  */
 
  .c-form {
    display: flex;
    flex-direction: column;
  }
-
-  .c-form__group {
-    width: 100%;
-    padding-top: $unit;
-    position: relative;
-    margin-bottom: $unit;
-  }
-
-  .c-form__field {
-    width: 100%;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid $color-gray--light;
-    @include inuit-font-size(18px, 1.5);
-    padding-left: $unit-small;
-    padding-right: $unit-small;
-
-    position: relative;
-
-    &::placeholder {
-      opacity: 0;
-    }
-
-  }
-
-  .c-form__label {
-    position: absolute;
-    left: 0;
-    top: 0;
-    @include inuit-font-size(13px, 1.5);
-    padding-left: $unit-small;
-    padding-right: $unit-small;
-    transition: $global-transition-fast;
-
-    .c-form__field:placeholder-shown:not(:focus) ~ & {
-      top: $unit;
-      @include inuit-font-size(18px, 1.5);
-      color: $color-gray;
-      cursor: text;
-    }
-  }
-
-
-  /* From-bar
-   ========================================================================== */
-
-  /*
-   * Bar to highlight focuesed field
-   * 
-   * 1. Causes overlay on .c-form__field border-bottom
-   * 2. Expands border from center when .c-form__field is focused
-   */
-
-  .c-form__bar {
-    margin-left: auto; /* [2] */
-    margin-right: auto; /* [2] */
-    display: block; /* [2] */
-    width: 0; /* [2] */
-    border-bottom: 3px solid $color-brand;
-    transition: $global-transition-fast; /* [2] */
-    z-index: 1; /* [1] */
-    margin-top: -2px; /* [1] */
-    position: relative; /* [1] */
-
-    .c-form__field:focus ~ & {
-      width: 100%; /* [2] */
-    }
-
-    .c-form__field:valid ~ & {
-      border-color: $color-success;
-    }
-  }
-
 
 
 /* Form-variants

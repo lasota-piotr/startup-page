@@ -1,0 +1,84 @@
+/* ==========================================================================
+   #FORM-GROUP
+   ========================================================================== */
+
+
+/**
+ * Form input field with floating label
+ */
+
+
+/* Form-group
+  ========================================================================== */
+
+.c-form-group {
+  width: 100%;
+  padding-top: $unit;
+  position: relative;
+  margin-bottom: $unit;
+}
+
+  .c-form-group__input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $color-gray--light;
+    @include inuit-font-size(18px, 1.5);
+    padding-left: $unit-small;
+    padding-right: $unit-small;
+
+    position: relative;
+
+    &::placeholder {
+      opacity: 0;
+    }
+
+  }
+
+  .c-form-group__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include inuit-font-size(13px, 1.5);
+    padding-left: $unit-small;
+    padding-right: $unit-small;
+    transition: $global-transition-fast;
+
+    .c-form-group__input:placeholder-shown:not(:focus) ~ & {
+      top: $unit;
+      @include inuit-font-size(18px, 1.5);
+      color: $color-gray;
+      cursor: text;
+    }
+  }
+
+
+  /* Form-bar
+    ========================================================================== */
+
+  /*
+    * Bar to highlight focuesed field
+    * 
+    * 1. Causes overlay on .c-form__field border-bottom
+    * 2. Expands border from center when .c-form__field is focused
+    */
+
+  .c-form-group__input-bar {
+    margin-left: auto; /* [2] */
+    margin-right: auto; /* [2] */
+    display: block; /* [2] */
+    width: 0; /* [2] */
+    border-bottom: 3px solid $color-brand;
+    transition: $global-transition-fast; /* [2] */
+    z-index: 1; /* [1] */
+    margin-top: -2px; /* [1] */
+    position: relative; /* [1] */
+
+    .c-form-group__input:focus ~ & {
+      width: 100%; /* [2] */
+    }
+
+    .c-form-group__input:valid ~ & {
+      border-color: $color-success;
+    }
+  }
