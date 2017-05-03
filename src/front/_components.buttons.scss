@@ -185,3 +185,54 @@ $btn-ghost-border-width: 2px;
   }
   
 }
+
+/* Social buttons
+   ========================================================================== */
+
+.c-btn--social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-left: $unit;
+  box-shadow: inset  0 0 0 $btn-ghost-border-width currentColor;
+  outline: none;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+  }
+
+  .c-btn__icon {
+    height: $unit-large;
+    margin-left: -$unit;
+    margin-right: auto;
+    flex-shrink: 0;
+  }
+
+  .c-btn__content {
+    padding-left: $unit;
+    padding-right: $unit;
+    width: 100%;
+  }
+}
+
+.c-btn--facebook {
+  color: $color-facebook;
+
+  &:hover,
+  &:focus {
+    color: darken($color-facebook, 15%);
+  }
+}
+
+.c-btn--google-plus {
+  color: $color-google-plus;
+
+  &:hover,
+  &:focus {
+    color: darken($color-google-plus, 15%);
+  }
+}

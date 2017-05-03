@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+
+<header class="c-page-head">
+
+  <div class="o-wrapper o-wrapper--flush">
+
+    <nav class="c-nav-primary js-nav-primary">
+
+
+      <a href="#">
+
+        <div class="c-nav-primary__logo o-flag o-flag--tiny">
+          <div class="o-flag__img">
+            <img src="http://placehold.it/50x50" alt="">
+          </div>
+
+          <h1 class="c-nav-primary__text o-flag__body">
+            <span class="c-nav-primary__text-item c-nav-primary__text-item--secondary">Super</span>
+            <span class="c-nav-primary__text-item">Awesome!</span>
+          </h1>
+        </div>
+
+      </a>
+
+      <ul class="c-nav-primary__list o-list-bare">
+
+        <li class="c-nav-primary__item">
+          <a href="#" class="c-nav-primary__link c-nav-primary__link--active">Lorem ipsum</a>
+        </li>
+
+        <li class="c-nav-primary__item">
+          <a href="#" class="c-nav-primary__link">Lorem ipsum</a>
+        </li>
+
+        <li class="c-nav-primary__item">
+          <a href="#" class="c-nav-primary__link">Lorem ipsum</a>
+        </li>
+
+        <li class="c-nav-primary__item">
+          <a href="#" class="c-nav-primary__link">Moje konto</a>
+
+          <ul class="c-nav-primary__sub-list o-list-bare">
+            <li class="c-nav-primary__item">
+              <a href="#" class="c-nav-primary__sub-link">
+                Informacje o koncie
+              </a>
+            </li>
+            <li class="c-nav-primary__item">
+              <a href="#" class="c-nav-primary__sub-link">
+                Wyloguj się
+              </a>
+            </li>
+          </ul>
+
+        </li>
+
+      </ul>
+
+      <div class="c-nav-primary__section">
+
+        <button class="c-nav-primary__menu-btn c-btn c-btn--small js-nav-primary__menu-btn">
+          <div class="c-hamburger"></div>
+        </button>
+        
+      </div>
+
+    </nav>
+  
+  </div>
+
+</header>
+
+<div class="u-padding-bottom-huge"></div>
+
+<main>
+  <div class="o-wrapper">
+    <div class="o-layout o-layout--flush o-layout--middle">
+
+      <div class="o-layout__item u-1/1 u-text-banner">
+        <h1>Zaloguj się</h1>
+        <h2>Nie masz konta? <a href="#">Zarejestruj się</a></h2>
+      </div>
+
+      <div class="o-layout__item 
+                  u-1/1 u-1/2@tablet 
+                  u-margin-bottom-large u-margin-bottom-none@tablet">
+
+        <form class="c-form c-form--border-right@tablet
+                     o-box o-box--tiny o-box--large@tablet">
+
+          <div class="c-form__group u-margin-top">
+            <input type="email" id="mail" class="c-form__field" 
+              placeholder="Email" required></input>
+            <label for="mail" class="c-form__label">Email</label>
+            <span class="c-form__bar"></span>
+          </div>
+
+          <div class="c-form__group">
+            <input type="password" id="password" class="c-form__field" 
+              placeholder="Passowrd" required>
+            <label for="password" class="c-form__label">Hasło</label>
+            <span class="c-form__bar"></span>
+          </div>
+
+          <div class="u-text-banner">
+            <input type="submit" value="Zaloguj" class="c-btn c-btn--secondary">
+          </div>
+          
+        </form>
+
+      </div>
+
+      <div class="o-layout__item u-1/1 u-1/2@tablet u-padding-right u-padding-right-huge@tablet">
+        <div class="o-box o-box--tiny o-box--large@tablet">
+          <div class="u-text-banner">
+            <h3 class="u-h2">Zaloguj się przez:</h3>
+          </div>
+          
+
+          <button class="c-btn c-btn--full c-btn--social c-btn--facebook
+                         u-margin-bottom">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="c-btn__icon">
+              <rect fill="currentColor" height="512" rx="15%" width="512"/>
+              <path d="m287 456v-299c0-21 6-35 35-35h38v-63c-7-1-29-3-55-3-54 0-91 33-91 94v306m143-254h-205v72h196" fill="#fff"/>
+            </svg>
+            <span class="c-btn__content">
+              Facebook
+            </span>
+          </button>
+
+          <button class="c-btn c-btn--full c-btn--social c-btn--google-plus">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"  class="c-btn__icon">
+              <circle fill="currentColor" cx="256" cy="256" r="256"/>
+              <path d="m56 257a126 126 0 0 1 212-96l-33 33c-21-13-49-24-75-14a80 80 0 1 0 54 151c21-8 35-28 41-48l-72-1v-44h122c1 36-3 74-27 102a127 127 0 0 1 -222-83zm327-56h36l1 37h36v37h-36l-1 36h-36v-36h-37v-37h37z" fill="#fff"/>
+            </svg>
+            <span class="c-btn__content">
+              Google
+            </span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+  
+</body>
+</html>

@@ -59,6 +59,15 @@ module.exports = {
       hash: true,
       template: './src/index.html', // Load a custom template (ejs by default see the FAQ for details)
     }),
+    new HtmlWebpackPlugin({
+      title: 'Login',
+      // minify: {
+      //   collapseWhitespace: true
+      // },
+      hash: true,
+      template: './src/login.html', // Load a custom template (ejs by default see the FAQ for details)
+      filename: 'login.html'
+    }),
     new ExtractTextPlugin({
       filename: './[name].css',
       disable: !isProd

@@ -52,10 +52,12 @@
 @import 'front/components.nav-primary';
 @import 'front/components.page-head';
 @import 'front/components.hamburger';
+@import 'front/components.form';
 
 
 // UTILITIES
 @import 'front/utilities.headings';
 @import 'front/utilities.spacings';
+@import 'front/utilities.responsive-spacings'; 
 @import 'front/utilities.widths';
 @import 'front/utilities.type'; 
