@@ -17,11 +17,15 @@ $color-gray--light:      lighten($color-gray, 50%);
 $color-gray--very-light: lighten($color-gray, 60%);
 $color-gray--dark:       darken($color-gray, 15%);
 
-$color-success:         #4BB543;
-$color-danger:          #d9534f;
+$color-success:          #4BB543;
+$color-danger:           #d9534f;
 
-$color-facebook:        #3b5998;
-$color-google-plus:     #dc4d41;
+// Social media
+$color-facebook:          #3b5998;
+$color-facebook--dark:    darken($color-facebook, 15%);
+
+$color-google-plus:       #dc4d41;
+$color-google-plus--dark: darken($color-google-plus, 15%);
 
 // Page
 $color-base-background:  #fff;
