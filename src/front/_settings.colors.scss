@@ -47,17 +47,21 @@ $color-text:         $color-gray--dark;
 
 
 // Links    
-$color-link:         $color-brand;
-$color-link--hover:  $color-brand--light;
+$color-link:              $color-brand;
+$color-link--hover:       $color-brand--light;
 
 
 // Icons
-$color-icon:         $color-gray--dark;
+$color-icon:              $color-gray--dark;
 
 
 // Panel
-$color-panel-border: $color-gray--very-light;
+$color-panel-border:      $color-gray--very-light;
 
 
 // Horizontal rule
-$color-line:         $color-gray--very-light;               
+$color-line:              $color-gray--very-light;     
+
+// Footer
+$color-footer-background: $color-brand;
+$color-footer-text:       #fff;    

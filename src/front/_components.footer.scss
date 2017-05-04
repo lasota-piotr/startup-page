@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #FOOTER
+   ========================================================================== */
+
+
+.c-footer {
+  display: block;
+  background-color: $color-footer-background;
+  padding-top: $unit;
+  color: $color-footer-text;
+}
+
+.c-footer__text {
+  @include inuit-font-size(13px, 1.5);
+}
+
+.c-footer__item {
+  @include inuit-font-size(14px, 1.5);
+}
+
+.c-footer__item--prominent {
+  font-weight: $font-weight-bold;
+}
+
+.c-footer__line {
+  border-color: $color-footer-text;
+}
