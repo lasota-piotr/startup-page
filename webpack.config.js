@@ -68,6 +68,15 @@ module.exports = {
       template: './src/login.html', // Load a custom template (ejs by default see the FAQ for details)
       filename: 'login.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'UI components',
+      // minify: {
+      //   collapseWhitespace: true
+      // },
+      hash: true,
+      template: './src/ui-components.html', // Load a custom template (ejs by default see the FAQ for details)
+      filename: 'ui-components.html'
+    }),
     new ExtractTextPlugin({
       filename: './[name].css',
       disable: !isProd

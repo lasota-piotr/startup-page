@@ -1,0 +1,34 @@
+/* ==========================================================================
+   #PAGINATION
+   ========================================================================== */
+
+.c-pagination {
+  display: inline-flex;
+  border: 1px solid $color-pagination-border;
+  border-radius: $global-radius;
+}
+
+  .c-pagination__item {
+    padding: $unit-tiny $unit-small;
+
+    &:not(:last-child) {
+      border-right: 1px solid $color-pagination-border;
+    }
+  }
+
+  .c-pagination__link {
+    color: $color-pagination-text;
+    font-weight: $font-weight-light;
+
+    &:hover {
+      font-weight: $font-weight-regular;
+    }
+  }
+
+
+.c-pagination__item--active {
+
+  .c-pagination__link {
+    font-weight: $font-weight-bold;
+  }
+}

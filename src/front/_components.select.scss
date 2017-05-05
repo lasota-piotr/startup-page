@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #SELECT
+   ========================================================================== */
+
+
+$color-select-text:   $color-gray;
+$color-select-border: $color-gray;
+
+.c-select {
+  padding: $unit-tiny;
+  border: 1px solid $color-select-border;
+  border-radius: $global-radius;
+}
