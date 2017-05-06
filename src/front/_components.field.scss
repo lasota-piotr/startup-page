@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #FIELD
+   ========================================================================== */
+
+
+/**
+ * Text field
+ */
+
+$color-field-text:       $color-text;
+$color-field-border:     $color-gray;
+$color-field-higlighted: $color-brand;
+
+.c-field {
+  border: 1px solid $color-field-border;
+  border-radius: $global-radius;
+  padding: $unit-small;
+  color: $color-field-text;
+
+  &:focus {
+    outline-color: $color-field-higlighted;
+  }
+}
+
+/* Size variants
+   ========================================================================== */
+
+.c-field--full {
+  width: 100%;
+}

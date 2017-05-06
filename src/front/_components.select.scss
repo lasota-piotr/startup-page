@@ -3,11 +3,23 @@
    ========================================================================== */
 
 
-$color-select-text:   $color-gray;
-$color-select-border: $color-gray;
+$color-select-text:        $color-gray;
+$color-select-border:      $color-gray;
+$color-select-highlighted: $color-brand;
 
 .c-select {
-  padding: $unit-tiny;
+  color: $color-select-text;  
+  padding: $unit-small $unit $unit-small $unit-small;
   border: 1px solid $color-select-border;
   border-radius: $global-radius;
+
+  &:focus {
+    outline-color: $color-select-highlighted;
+  }
 }
+
+.c-select__item {
+  color: $color-select-text; 
+}
+
+

@@ -4,17 +4,15 @@
 // color palette: http://loveyourpalette.com/#/4AA0D5/EB586F/454553/E8ECED/FFFFFF/?_k=lgiqxy
 
 
-$color-brand:            #2775a5;
-$color-brand--light:     lighten($color-brand, 15%);
+$color-brand:            #42AB9E;
+$color-brand--light:     #E1F3EE;
 $color-brand--dark:      darken($color-brand, 10%);
-  
 
 $color-accent:           #EB586F;
 $color-accent--dark:     darken($color-accent, 15%);
    
-$color-gray:             #454553;
-$color-gray--light:      lighten($color-gray, 50%);
-$color-gray--very-light: lighten($color-gray, 60%);
+$color-gray:             #7F7f7f;
+$color-gray--light:      #F5F5F5;
 $color-gray--dark:       darken($color-gray, 15%);
 
 $color-success:          #4BB543;
@@ -48,7 +46,7 @@ $color-text:         $color-gray--dark;
 
 // Links    
 $color-link:              $color-brand;
-$color-link--hover:       $color-brand--light;
+$color-link--hover:       $color-brand--dark;
 
 
 // Icons
@@ -56,19 +54,13 @@ $color-icon:              $color-gray--dark;
 
 
 // Panel
-$color-panel-border:      $color-gray--very-light;
+$color-panel-border:      $color-gray--light;
 
 
 // Horizontal rule
-$color-line:              $color-gray--very-light;     
+$color-line:              $color-gray--light;     
 
 // Footer
 $color-footer-background: $color-brand;
 $color-footer-text:       #fff;
 
-// Pagination
-$color-pagination-text:   $color-brand;
-$color-pagination-border: $color-gray;
-
-// Breadcrumb
-$color-breadcrumb-text:   $color-brand;

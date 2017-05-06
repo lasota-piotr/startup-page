@@ -2,6 +2,11 @@
    #PAGINATION
    ========================================================================== */
 
+
+// Pagination
+$color-pagination-text:   $color-brand;
+$color-pagination-border: $color-gray--light;
+
 .c-pagination {
   display: inline-flex;
   border: 1px solid $color-pagination-border;
@@ -10,7 +15,7 @@
 
   .c-pagination__item {
     padding: $unit-tiny $unit-small;
-
+    
     &:not(:last-child) {
       border-right: 1px solid $color-pagination-border;
     }
@@ -19,6 +24,7 @@
   .c-pagination__link {
     color: $color-pagination-text;
     font-weight: $font-weight-light;
+    transition: $global-transition-fast;
 
     &:hover {
       font-weight: $font-weight-regular;

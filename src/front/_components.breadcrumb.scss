@@ -2,20 +2,24 @@
    #BREADCRUMB
    ========================================================================== */
 
+// Breadcrumb
+$color-breadcrumb-text:   $color-brand;
+
 .c-breadcrumb {
 
 }
 
   .c-breadcrumb__item {
     color: $color-breadcrumb-text;
-
-    &:last-child {
-      font-weight: $font-weight-bold;
-    }
+    transition: $global-transition-fast;  
 
     &:not(:last-child)::after {
       margin-left: $unit-tiny;
       margin-right: $unit-tiny;
       content: ">"
     }
+  }
+
+  .c-breadcrumb__item--active {
+    font-weight: $font-weight-bold;
   }

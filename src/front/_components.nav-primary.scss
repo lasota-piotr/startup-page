@@ -68,6 +68,10 @@ $nav-height: $unit-xlarge;
     padding-left: $unit-large;
     padding-right: $unit-large;
 
+    &:hover {
+      color: $color-brand;
+    }
+
     @include mq($from: tablet) {
       @include inuit-font-size(18px, $nav-height);
       height: $nav-height;
@@ -145,7 +149,7 @@ $nav-height: $unit-xlarge;
     }
 
     &:hover {
-      color: $color-brand--light;
+      color: $color-brand--dark;
     }
   }
 

@@ -23,9 +23,9 @@ $font-weight-light:   300;
 $font-weight-regular: 400;
 $font-weight-bold:    700;
 
-$global-radius:       2px;
+$global-radius:       1px;
 
-$global-transition: all 0.3s;
+$global-transition:      all 300ms ease-in-out;
 $global-transition-fast: all 150ms ease-in-out;
 
 $unit-factor-tiny :  0.25;
