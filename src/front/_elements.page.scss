@@ -15,11 +15,14 @@
  */
 
 html {
-  font-size: ($global-font-size / 16px) * 1em; /* [1] */
+  font-size: ($global-font-size / 16px) * 0.8em; /* [1] */
+  @include mq($from: wide) {
+    font-size: ($global-font-size / 16px) * 1.0em; /* [1] */
+  }
   line-height: $global-line-height / $global-font-size; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
   color: $color-text;
   background-color: $color-base-background;
-  font-family: $system-font;
+  font-family: $global-font;
 }

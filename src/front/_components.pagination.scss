@@ -3,7 +3,6 @@
    ========================================================================== */
 
 
-// Pagination
 $color-pagination-text:   $color-brand;
 $color-pagination-border: $color-gray--light;
 
@@ -23,7 +22,7 @@ $color-pagination-border: $color-gray--light;
 
   .c-pagination__link {
     color: $color-pagination-text;
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-thin;
     transition: $global-transition-fast;
 
     &:hover {

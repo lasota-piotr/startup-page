@@ -9,3 +9,24 @@
 .u-text-nowrap {
   white-space: nowrap !important;
 }
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+
+/* Font-weight
+   ========================================================================== */
+
+.u-text-thin {
+  font-weight: $font-weight-thin;
+}
+
+.u-text-bold {
+  font-weight: $font-weight-bold;
+}
+
+
+
+
+

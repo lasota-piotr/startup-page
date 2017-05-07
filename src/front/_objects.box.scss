@@ -46,18 +46,3 @@
 .o-box--huge {
   padding: $unit-huge;
 }
-
-/* Responsive variants
-   ========================================================================== */
-
-.o-box--normal\@tablet {
-  @include mq($from: tablet) {
-    padding: $unit;
-  }
-}
-
-.o-box--large\@tablet {
-  @include mq($from: tablet) {
-    padding: $unit-large;
-  }
-}

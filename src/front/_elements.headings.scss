@@ -24,18 +24,22 @@ $inuit-font-size-h6:  16px !default;
 
 h1 {
   @include inuit-font-size($inuit-font-size-h1);
+  font-weight: $font-weight-regular;
 }
 
 h2 {
   @include inuit-font-size($inuit-font-size-h2);
+  font-weight: $font-weight-regular;
 }
 
 h3 {
   @include inuit-font-size($inuit-font-size-h3);
+  font-weight: $font-weight-regular;
 }
 
 h4 {
   @include inuit-font-size($inuit-font-size-h4);
+  font-weight: $font-weight-regular;
 }
 
 h5 {

@@ -86,28 +86,39 @@
 <div class="u-padding-bottom-huge"></div>
 
 <main class="o-wrapper">
-  <h1>UI components</h1>
+  <nav class="c-breadcrumb u-margin-bottom">
+    <a href="#" class="c-breadcrumb__item">Lorem ipsum</a>
+    <a href="#" class="c-breadcrumb__item">Lorem ipsum</a>
+    <span class="c-breadcrumb__item c-breadcrumb__item--active">Lorem ipsum</span>
+  </nav>
+
+  <h1>Sample list 1</h1>
 
   <section class="u-margin-bottom-large">
-    <h2 class="u-h3 u-margin-bottom-small">Breadcrumb</h2>
-    <nav class="c-breadcrumb">
-      <a href="#" class="c-breadcrumb__item">Lorem ipsum</a>
-      <a href="#" class="c-breadcrumb__item">Lorem ipsum</a>
-      <span class="c-breadcrumb__item c-breadcrumb__item--active">Lorem ipsum</span>
-    </nav>
-  </section>
-
-  <section class="u-margin-bottom-large">
-    <h2 class="u-h3 u-margin-bottom-small">Card-wide</h2>
-    <article class="o-flag o-flag--flush c-card-wide
+    <article class="o-flag
+                    c-card-wide
                     u-margin-bottom">
       <div class="o-flag__img c-card-wide__img" 
         style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97200&w=350&h=200)">
       </div>
       <div class="o-flag__body c-card-wide__body">
-        <h2 class="c-card-wide__title">Lorem ipsum dolor</h2>
-        <h3 class="c-card-wide__sub-title">Molestias culpa vel eius</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias culpa vel eius consequuntur neque eos repellat delectus quae iste. Fugit.</p>
+        <div class="o-pack o-pack--wrap o-pack--space-between">
+          <div class="o-pack__item">
+            <h2 class="c-card-wide__title">Lorem ipsum dolor</h2>
+            <h3 class="u-h6 u-margin-bottom-tiny">Consectetur Adipisicing</h3>
+            <p class="u-margin-bottom-large">
+              <span class="u-text-bold">Lorem: </span>
+              <span class="u-text-uppercase">consectetur dolor</span>
+            </p>
+            <h4 class="u-h3 u-text-thin">Ipsum dolor</h4>
+          </div>
+          <div class="o-pack__item">
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+        </div>
+        
       </div>
     </article>
   </section>

@@ -77,6 +77,15 @@ module.exports = {
       template: './src/ui-components.html', // Load a custom template (ejs by default see the FAQ for details)
       filename: 'ui-components.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Sample list 1',
+      // minify: {
+      //   collapseWhitespace: true
+      // },
+      hash: true,
+      template: './src/list1.html', // Load a custom template (ejs by default see the FAQ for details)
+      filename: 'list1.html'
+    }),
     new ExtractTextPlugin({
       filename: './[name].css',
       disable: !isProd

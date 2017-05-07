@@ -1,0 +1,40 @@
+/* ==========================================================================
+   #CARD-WIDE
+   ========================================================================== */
+
+.c-card-wide {
+  flex-wrap: wrap;
+  align-items: stretch;
+  box-shadow: $global-shadow;
+
+  @include mq($from: tablet) {
+    flex-wrap: nowrap;
+  }
+}
+
+  .c-card-wide__img {
+    width: 100%;
+    padding-bottom: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include mq($from: tablet) {
+      padding-bottom: 17%; 
+      width: 30%;
+    }
+  }
+
+  .c-card-wide__body {
+    padding: $unit-small;
+  }
+
+  .c-card-wide__title {
+    font-weight: $font-weight-regular;
+    @include inuit-font-size(28px, 1.5);
+    margin-bottom: 0;
+  }
+
+  .c-card-wide__sub-title {
+    font-weight: $font-weight-bold;
+    @include inuit-font-size(16px, 1.5);
+  }
