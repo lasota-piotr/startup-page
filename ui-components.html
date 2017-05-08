@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Login</title>
+  <title>UI components</title>
 <link href="./main.css?f39cc52c144e0fa996c9" rel="stylesheet"></head>
 <body>
 
@@ -35,7 +35,7 @@
         <li class="c-nav-primary__item">
           <a href="#" class="c-nav-primary__link c-nav-primary__link--active">Lorem ipsum</a>
         </li>
-
+        
         <li class="c-nav-primary__item">
           <a href="./ui-components.html" class="c-nav-primary__link">UI components</a>
         </li>
@@ -85,72 +85,84 @@
 
 <div class="u-padding-bottom-huge"></div>
 
-<main class="u-margin-bottom-huge">
-  <div class="o-wrapper">
-    <div class="o-layout o-layout--flush o-layout--middle">
+<main class="o-wrapper">
+  <h1>UI components</h1>
 
-      <div class="o-layout__item u-1/1 u-text-centered">
-        <h1>Zaloguj się</h1>
-        <h2>Nie masz konta? <a href="#">Zarejestruj się</a></h2>
+  <section class="u-margin-bottom-large">
+    <h2 class="u-h3 u-margin-bottom-small">Breadcrumb</h2>
+    <nav class="c-breadcrumb">
+      <a href="#" class="c-breadcrumb__item">Lorem ipsum</a>
+      <a href="#" class="c-breadcrumb__item">Lorem ipsum</a>
+      <span class="c-breadcrumb__item c-breadcrumb__item--active">Lorem ipsum</span>
+    </nav>
+  </section>
+
+  <section class="u-margin-bottom-large">
+    <h2 class="u-h3 u-margin-bottom-small">Card-wide</h2>
+    <article class="o-flag o-flag--flush c-card-wide
+                    u-margin-bottom">
+      <div class="o-flag__img c-card-wide__img" 
+        style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97200&w=350&h=200)">
       </div>
-
-      <div class="o-layout__item 
-                  u-1/1 u-1/2@tablet 
-                  u-margin-bottom-large u-margin-bottom-none@tablet">
-
-        <form class="c-form c-form--border-right@tablet
-                     o-box">
-
-          <div class="c-form-group u-margin-top">
-            <input type="email" id="mail" class="c-form-group__input" 
-              placeholder="Email" required></input>
-            <label for="mail" class="c-form-group__label">Email</label>
-            <span class="c-form-group__input-bar"></span>
-          </div>
-
-          <div class="c-form-group">
-            <input type="password" id="password" class="c-form-group__input" 
-              placeholder="Passowrd" required>
-            <label for="password" class="c-form-group__label">Hasło</label>
-            <span class="c-form-group__input-bar"></span>
-          </div>
-
-          <div class="u-text-centered">
-            <input type="submit" value="Zaloguj" class="c-btn c-btn--secondary">
-          </div>
-          
-        </form>
-
+      <div class="o-flag__body c-card-wide__body">
+        <h2 class="c-card-wide__title">Lorem ipsum dolor</h2>
+        <h3 class="c-card-wide__sub-title">Molestias culpa vel eius</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias culpa vel eius consequuntur neque eos repellat delectus quae iste. Fugit.</p>
       </div>
+    </article>
+  </section>
 
-      <div class="o-layout__item u-1/1 u-1/2@tablet u-padding-right u-padding-right-huge@tablet">
-        <div class="o-box">
-          <div class="u-text-centered">
-            <h3 class="u-h2">Zaloguj się przez:</h3>
-          </div>
-          
-          <button class="c-btn c-btn--full c-btn--social c-btn--facebook
-                         u-margin-bottom">
-            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="c-btn__icon">
-              <rect fill="currentColor" height="512" rx="15%" width="512"/>
-              <path d="m287 456v-299c0-21 6-35 35-35h38v-63c-7-1-29-3-55-3-54 0-91 33-91 94v306m143-254h-205v72h196" fill="#fff"/>
-            </svg>
-            Facebook
-          </button>
 
-          <button class="c-btn c-btn--full c-btn--social c-btn--google-plus">
-            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"  class="c-btn__icon">
-              <circle fill="currentColor" cx="256" cy="256" r="256"/>
-              <path d="m56 257a126 126 0 0 1 212-96l-33 33c-21-13-49-24-75-14a80 80 0 1 0 54 151c21-8 35-28 41-48l-72-1v-44h122c1 36-3 74-27 102a127 127 0 0 1 -222-83zm327-56h36l1 37h36v37h-36l-1 36h-36v-36h-37v-37h37z" fill="#fff"/>
-            </svg>
-            Google
-          </button>
+  <section class="u-margin-bottom-large">
+    <h2 class="u-h3 u-margin-bottom-small">Select</h2>
+    <select name="select" class="c-select">
+      <option value="value1" class="c-select__item">Value 1</option>
+      <option value="value1" class="c-select__item">Value 2</option>
+      <option value="value1" class="c-select__item">Value 3</option>
+      <option value="value1" class="c-select__item">Value 4</option>
+    </select>
+  </section>
 
-        </div>
-      </div>
 
-    </div>
-  </div>
+  <section class="u-margin-bottom-large">
+    <h2 class="u-h3 u-margin-bottom-small">Field</h2>
+    <input type="text" class="c-field u-margin-bottom-small"
+      placeholder="Type something...">
+    <input type="text" class="c-field c-field--full"
+      placeholder="Type something...">
+  </section>
+
+  
+  <section class="u-margin-bottom-large">
+    <h2 class="u-h3 u-margin-bottom-small">Pagination</h2>
+    <nav class="u-text-centered">
+      <ul class="c-pagination o-list-bare">
+        <li class="c-pagination__item">
+          <a href="#" class="c-pagination__link" aria-label="First"><<</a>
+        </li>
+        <li class="c-pagination__item">
+          <a href="#" class="c-pagination__link" aria-label="Previous"><</a>
+        </li>
+        <li class="c-pagination__item">
+          <a href="#" class="c-pagination__link">1</a>
+        </li>
+        <li class="c-pagination__item c-pagination__item--active">
+          <a href="#" class="c-pagination__link">2</a>
+        </li>
+        <li class="c-pagination__item">
+          <a href="#" class="c-pagination__link">3</a>
+        </li>
+        <li class="c-pagination__item">
+          <a href="#" class="c-pagination__link" aria-label="Next">></a>
+        </li>
+        <li class="c-pagination__item">
+          <a href="#" class="c-pagination__link" aria-label="Last">>></a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  
+
 </main>
 
 
