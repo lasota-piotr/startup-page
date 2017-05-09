@@ -1,0 +1,62 @@
+/* ==========================================================================
+   #ARTICLE
+   ========================================================================== */
+
+/**
+ * Blog article
+ */
+
+.c-article {
+  
+}
+
+  .c-article__title {
+    @include font-size(56px, 1.2);
+    margin-bottom: $unit-tiny;
+  }
+
+  .c-article__prominent {
+    font-family: $global-font-secondary;
+    @include font-size(19px, 1.5);
+    font-style: italic;
+  }
+
+  .c-article__image {
+    width: 100%;
+  }
+
+  .c-article__line {
+    border-color: inherit;
+  }
+
+  .c-article__regular-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .c-article__info-text {
+    @include font-size(18px);
+  }
+
+
+  .c-article__body {
+
+    p {
+      font-family: $global-font-secondary;
+      @include font-size(19px, 1.6);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: $unit-tiny;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: $unit;
+    }
+  } 

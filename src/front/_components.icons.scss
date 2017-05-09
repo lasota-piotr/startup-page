@@ -5,16 +5,14 @@
 
 /**
  * Styling for SVG icons.
- * 1. Visual alignment for icons alongside text. Better than vertical-align: 
- *    middle.
- * 2. Allows sizing the icon by changing its font-size.
+ * 1. Allows sizing the icon by changing its font-size.
  */
 
 .c-icon {
   display: inline-block;
-  vertical-align: -0.15em; /* [1] */
-  width: 1em; /* [2] */
-  height: 1em; /* [2] */
+  vertical-align: middle;
+  width: 1em; /* [1] */
+  height: 1em; /* [1] */
 }
 
 
@@ -39,4 +37,47 @@
 .c-icon--huge {
   width: $unit-huge;
   height: $unit-huge;
+}
+
+
+/* Functional variants
+   ========================================================================== */
+
+.c-icon--like {
+
+  & > path {
+    fill: none;
+    stroke: $color-text;
+    stroke-width: 4%;
+  }
+
+  &:hover > path {
+    stroke: $color-accent;
+  }
+
+  &.is-active > path {
+    fill: $color-accent;
+    stroke: $color-accent;
+  }
+}
+
+
+
+/* Color variants
+   ========================================================================== */
+
+.c-icon--facebook {
+  color: $color-facebook;
+
+  &:hover {
+    color: $color-facebook--dark;
+  }
+}
+
+.c-icon--twitter {
+  color: $color-twitter;
+
+  &:hover {
+    color: $color-twitter--dark;
+  }
 }

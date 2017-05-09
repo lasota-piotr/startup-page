@@ -9,3 +9,12 @@
       text-decoration: underline !important;
     }
 }
+
+
+.u-link-secret {
+    color: inherit !important;
+
+    &:hover {
+      color: $color-link--hover !important;
+    }
+}

@@ -11,6 +11,7 @@
 @import 'front/tools.clearfix';
 @import 'front/tools.mq';
 @import 'front/tools.font-size';
+@import 'front/tools.aliases';
 
 // GENERIC
 @import 'front/generic.box-sizing';
@@ -60,6 +61,8 @@
 @import 'front/components.select';
 @import 'front/components.field';
 @import 'front/components.card-wide';
+@import 'front/components.article';
+@import 'front/components.avatar';
 
 
 // UTILITIES

@@ -86,6 +86,15 @@ module.exports = {
       template: './src/list1.html', // Load a custom template (ejs by default see the FAQ for details)
       filename: 'list1.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Article',
+      // minify: {
+      //   collapseWhitespace: true
+      // },
+      hash: true,
+      template: './src/article.html', // Load a custom template (ejs by default see the FAQ for details)
+      filename: 'article.html'
+    }),
     new ExtractTextPlugin({
       filename: './[name].css',
       disable: !isProd
