@@ -1,0 +1,49 @@
+/* ==========================================================================
+   #CARD
+   ========================================================================== */
+
+$color-card-bg: #fff;
+$width-card: 350px;
+
+.c-card {
+  max-width: $width-card;
+  background-color: $color-card-bg;
+  box-shadow: $global-shadow;
+  transition: $global-transition-fast;
+  color: $color-text;
+  
+  &:hover {
+    transform: scale(1.008);
+    color: $color-text;
+  }
+}
+
+  .c-card__img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .c-card__body {
+    min-height: $width-card/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .c-card__title {
+    @include font-size(23px, 1.2);
+    font-weight: $font-weight-regular;
+    max-height: $unit-huge;
+    margin-bottom: $unit-tiny;
+    overflow: hidden;
+  }
+
+  .c-card__footer {
+    margin-top: auto;
+  }
+
+.c-card--center {
+  margin-left: auto;
+  margin-right: auto;
+}

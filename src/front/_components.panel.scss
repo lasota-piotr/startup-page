@@ -2,7 +2,17 @@
    #PANEL
    ========================================================================== */
 
+$color-panel-border: $color-gray--light;
+$color-panel-bg-muted: $color-gray--light;
 
 .c-panel {
   border-bottom: 1px solid $color-panel-border;
+}
+
+.c-panel--noborder {
+  border: 0;
+}
+
+.c-panel--bg-muted {
+  background-color: $color-panel-bg-muted;
 }
