@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const isProd = process.argv.indexOf('-p') !== -1; // true or false
 const cssDev = ['style-loader', 'css-loader', 'sass-loader'];
@@ -24,6 +24,12 @@ module.exports = {
       {
         test: /\.scss$/, 
         use: cssConfig
+      },
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: 'eslint-loader'
       }, 
       {
         test: /\.js$/,
